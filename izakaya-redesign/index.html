@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Izakaya | Japanese small plates in Dhaka</title>
+  <meta name="description"
+    content="Authentic sushi, sashimi, tacos, bowls and cocktails in Dhaka. Book a table at Dhanmondi, Uttara or Gulshan, or order delivery and pickup.">
+  <meta name="keywords" content="Best Japanese Restaurant in Dhaka, Best Tacos in Dhaka, sushi Dhaka">
+  <meta property="og:site_name" content="Izakaya">
+  <meta property="og:title" content="Best Japanese Restaurant in Dhaka | Authentic Sushi">
+  <meta property="og:description"
+    content="Authentic sushi, sashimi, tacos, bowls and cocktails in Dhaka. Book a table or order online.">
+  <meta property="og:image" content="images/brand/og-image.jpg">
+  <link rel="canonical" href="https://izakaya.com.bd/">
+  <meta name="theme-color" content="#5B0F27">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#top" aria-label="Izakaya home">
+      <img class="brand-light" src="images/brand/logo-white.png" alt="" width="600" height="127">
+      <img class="brand-dark" src="images/brand/logo-burgundy.png" alt="Izakaya" width="600" height="127">
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#menu">Menu</a>
+      <a href="#story">Our story</a>
+      <a href="https://izakaya.com.bd/catering-services/">Catering</a>
+      <a href="https://izakaya.com.bd/game-night/">Game night</a>
+      <a href="#find">Find us</a>
+      <a class="btn btn-cta btn-sm nav-cta" href="#reserve">Reserve a table</a>
+    </nav>
+
+    <a class="cart-link" href="https://izakaya.com.bd/cart/" aria-label="Open cart">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"
+        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M5 8h14l-1 12H6L5 8z" />
+        <path d="M9 8V6a3 3 0 0 1 6 0v2" />
+      </svg>
+      <span>Cart</span>
+    </a>
+
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO: the table ============ -->
+    <section class="hero" id="top" aria-label="Welcome">
+      <div class="hero-copy">
+        <p class="hero-open"><span class="dot" aria-hidden="true"></span> Open daily, 12pm to 10pm</p>
+        <h1>Small plates,<br>shared slowly.</h1>
+        <p class="hero-sub">Japanese tapas from our kitchens in Dhanmondi, Uttara and Gulshan. Sushi, tacos, bowls and
+          cocktails, made to be passed around the table.</p>
+        <div class="hero-actions">
+          <a class="btn btn-cta" href="#reserve">Reserve a table</a>
+          <a class="btn btn-ghost" href="https://izakaya.com.bd/products/">Order delivery</a>
+        </div>
+      </div>
+
+      <div class="stage" id="stage" aria-hidden="true">
+        <figure class="flyer" id="flyer">
+           <img id="flyerImg" src="images/cutouts/sushi-box.png" alt="" draggable="false">
+          <figcaption id="flyerCap"></figcaption>
+        </figure>
+      </div>
+
+      <!-- Noren: the shop curtain that parts on load -->
+      <div class="noren" id="noren" aria-hidden="true">
+        <div class="noren-panel p1"><span>居</span></div>
+        <div class="noren-panel p2"><span>酒</span></div>
+        <div class="noren-panel p3"><span>屋</span></div>
+      </div>
+    </section>
+
+    <!-- ============ STORY ============ -->
+    <section class="story" id="story">
+      <div class="wrap story-grid">
+        <div class="story-text">
+          <h2>An izakaya is a Japanese pub where small plates keep arriving and the table does the rest.</h2>
+          <p>It is often called Japanese tapas. Little dishes, shared between friends, made to celebrate the art of
+            fusion food. That is how we cook in Dhaka, and how we would like you to eat.</p>
+        </div>
+        <figure class="story-img">
+          <picture>
+             <source media="(max-width: 700px)" srcset="images/brand/banner-flatlay-mobile.jpg">
+             <img src="images/brand/banner-flatlay.jpg"
+               alt="Flat-lay of ramen, tempura prawns, gyoza and dipping sauces on a blue table" loading="lazy">
+          </picture>
+        </figure>
+      </div>
+
+      <div class="wrap ways">
+        <a class="way" href="#reserve">
+          <h3>Dine in</h3>
+          <p>Reserve a table online and settle into a warm, modern room.</p>
+          <span class="way-link">Book a table</span>
+        </a>
+        <a class="way" href="https://izakaya.com.bd/products/">
+          <h3>Delivery</h3>
+          <p>Sushi and small plates, brought to your door fresh and fast.</p>
+          <span class="way-link">Order delivery</span>
+        </a>
+        <a class="way" href="https://izakaya.com.bd/products/">
+          <h3>Pickup</h3>
+          <p>Choose online, stop by, collect it when it is ready.</p>
+          <span class="way-link">Order pickup</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ MENU: hover list ============ -->
+    <section class="menu" id="menu">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>The menu</h2>
+          <p>Ten ways in. Hover a course to see it.</p>
+        </div>
+        <ul class="menu-list" id="menuList">
+<li><a href="https://izakaya.com.bd/category/small-plates/" data-img="images/categories/small-plates.jpg"><span>Small
+                 plates</span><img src="images/categories/small-plates.jpg" alt="" loading="lazy"></a></li>
+           <li><a href="https://izakaya.com.bd/category/sushi-maki-balls/"
+               data-img="images/categories/sushi-maki.jpg"><span>Sushi &amp; maki</span><img src="images/categories/sushi-maki.jpg"
+                 alt="" loading="lazy"></a></li>
+           <li><a href="https://izakaya.com.bd/category/large-plates/" data-img="images/categories/large-plates.jpg"><span>Large
+                 plates</span><img src="images/categories/large-plates.jpg" alt="" loading="lazy"></a></li>
+           <li><a href="https://izakaya.com.bd/category/bowls/" data-img="images/categories/bowls.jpg"><span>Bowls</span><img
+                 src="images/categories/bowls.jpg" alt="" loading="lazy"></a></li>
+           <li><a href="https://izakaya.com.bd/category/sets-platters/"
+               data-img="images/categories/sets-platters.jpg"><span>Sets &amp; platters</span><img
+                 src="images/categories/sets-platters.jpg" alt="" loading="lazy"></a></li>
+           <li><a href="https://izakaya.com.bd/category/dessert/"
+               data-img="images/categories/dessert.jpg"><span>Dessert</span><img src="images/categories/dessert.jpg" alt=""
+                 loading="lazy"></a></li>
+           <li><a href="https://izakaya.com.bd/category/drinks/" data-img="images/categories/drinks.jpg"><span>Drinks</span><img
+                 src="images/categories/drinks.jpg" alt="" loading="lazy"></a></li>
+           <li><a href="https://izakaya.com.bd/category/diy-bbq-box/" data-img="images/categories/diy-bbq-box.jpg"><span>DIY BBQ
+                 box</span><img src="images/categories/diy-bbq-box.jpg" alt="" loading="lazy"></a></li>
+           <li><a href="https://izakaya.com.bd/category/guilt-free-picks-under-350-calories/"
+               data-img="images/categories/guilt-free.jpg"><span>Guilt-free picks under 350 calories</span><img
+                 src="images/categories/guilt-free.jpg" alt="" loading="lazy"></a></li>
+           <li><a href="https://izakaya.com.bd/category/corporate-lunch/"
+               data-img="images/categories/corporate-lunch.jpg"><span>Corporate lunch</span><img
+                 src="images/categories/corporate-lunch.jpg" alt="" loading="lazy"></a></li>
+        </ul>
+      </div>
+      <div class="menu-preview" id="menuPreview" aria-hidden="true"><img alt="" src=""></div>
+    </section>
+
+    <!-- ============ NEW IN: the order slip ============ -->
+    <section class="slip-section" id="slip">
+      <div class="wrap slip-grid">
+        <div class="slip-intro">
+          <h2>New on the menu</h2>
+          <p>At an izakaya you tick your order on a paper slip. Do the same here: tick what you fancy, set how many, and
+            watch the bill add up.</p>
+          <p class="slip-note">Prices are in taka. Final order and payment are completed on the ordering page.</p>
+        </div>
+
+        <form class="slip" id="slip-form" onsubmit="return false" aria-label="Order slip">
+          <div class="slip-top">
+            <span class="slip-title">Order slip</span>
+            <span class="slip-jp" lang="ja">お品書き</span>
+          </div>
+
+          <ul class="slip-items">
+            <li class="slip-row" data-price="1250">
+              <label class="slip-check"><input type="checkbox" aria-label="Spicy Salmon Poke Bowl"><span
+                  class="box"></span></label>
+               <img src="images/cutouts/poke-bowl.png" alt="">
+              <div class="slip-info"><strong>Spicy Salmon Poke Bowl</strong><span>Sashimi salad and avocado over rice,
+                  spicy mayo, crispy salmon skin.</span></div>
+              <div class="qty" aria-label="Quantity"><button type="button" class="minus" aria-label="Fewer"
+                  disabled>−</button><output>1</output><button type="button" class="plus" aria-label="More"
+                  disabled>+</button></div>
+              <span class="slip-price">৳ 1,250</span>
+            </li>
+            <li class="slip-row" data-price="700">
+              <label class="slip-check"><input type="checkbox" aria-label="Firecracker Maki Roll"><span
+                  class="box"></span></label>
+               <img src="images/cutouts/firecracker.png" alt="">
+              <div class="slip-info"><strong>Firecracker Maki Roll</strong><span>Avocado, stir-fried shrimp, mango
+                  salsa, cream cheese, jalapeño tempura.</span></div>
+              <div class="qty" aria-label="Quantity"><button type="button" class="minus" aria-label="Fewer"
+                  disabled>−</button><output>1</output><button type="button" class="plus" aria-label="More"
+                  disabled>+</button></div>
+              <span class="slip-price">৳ 700</span>
+            </li>
+            <li class="slip-row" data-price="600">
+              <label class="slip-check"><input type="checkbox" aria-label="Avocado Salmon Mentai Sushi"><span
+                  class="box"></span></label>
+               <img src="images/cutouts/mentai.png" alt="">
+              <div class="slip-info"><strong>Avocado Salmon Mentai Sushi</strong><span>Creamy avocado and fresh salmon
+                  under spicy mentai sauce.</span></div>
+              <div class="qty" aria-label="Quantity"><button type="button" class="minus" aria-label="Fewer"
+                  disabled>−</button><output>1</output><button type="button" class="plus" aria-label="More"
+                  disabled>+</button></div>
+              <span class="slip-price">৳ 600</span>
+            </li>
+            <li class="slip-row" data-price="880">
+              <label class="slip-check"><input type="checkbox" aria-label="Spicy Salmon Maki Roll"><span
+                  class="box"></span></label>
+               <img src="images/cutouts/salmon-maki.png" alt="">
+              <div class="slip-info"><strong>Spicy Salmon Maki Roll</strong><span>Spicy salmon over crab meat, cucumber
+                  and avocado.</span></div>
+              <div class="qty" aria-label="Quantity"><button type="button" class="minus" aria-label="Fewer"
+                  disabled>−</button><output>1</output><button type="button" class="plus" aria-label="More"
+                  disabled>+</button></div>
+              <span class="slip-price">৳ 880</span>
+            </li>
+          </ul>
+
+          <div class="slip-total">
+            <span>Total</span>
+            <b id="slipTotal" aria-live="polite">৳ 0</b>
+          </div>
+          <div class="slip-foot">
+            <a class="btn btn-cta" id="slipGo" href="https://izakaya.com.bd/products/">Order these online</a>
+            <span class="hanko" id="hanko" lang="ja" aria-hidden="true">注文</span>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ MOST LOVED ============ -->
+    <section class="loved" id="loved">
+      <div class="wrap">
+        <div class="section-head row">
+          <h2>Most loved</h2>
+          <div class="arrows">
+            <button class="arrow" id="lovedPrev" aria-label="Previous dishes">‹</button>
+            <button class="arrow" id="lovedNext" aria-label="Next dishes">›</button>
+          </div>
+        </div>
+      </div>
+      <div class="loved-track" id="lovedTrack" tabindex="0" aria-label="Most loved dishes">
+        <a class="dish" href="https://izakaya.com.bd/products/purple-lady">
+           <div class="dish-img"><img src="images/products/purple-lady.jpg" alt="Purple Lady"></div>
+          <h3>Purple Lady</h3>
+        </a>
+        <a class="dish" href="https://izakaya.com.bd/products/sushi-platter">
+           <div class="dish-img wide"><img src="images/products/sushi-platter.jpg" alt="Sushi Platter"></div>
+          <h3>Sushi Platter</h3>
+        </a>
+        <a class="dish" href="https://izakaya.com.bd/products/sunset-maki-roll">
+           <div class="dish-img wide"><img src="images/products/sunset-maki.jpg" alt="Sunset Maki Roll"></div>
+          <h3>Sunset Maki Roll</h3>
+        </a>
+        <a class="dish" href="https://izakaya.com.bd/products/margarita">
+           <div class="dish-img"><img src="images/products/margarita.jpg" alt="Margarita"></div>
+          <h3>Margarita</h3>
+        </a>
+        <a class="dish" href="https://izakaya.com.bd/products/sushi-platter-box">
+           <div class="dish-img"><img src="images/products/sushi-platter-box.jpg" alt="Sushi Platter Box"></div>
+          <h3>Sushi Platter Box</h3>
+        </a>
+        <a class="dish" href="https://izakaya.com.bd/products/japanese-cheese-cake">
+           <div class="dish-img"><img src="images/products/japanese-cheesecake.jpg" alt="Japanese Cheese Cake"></div>
+          <h3>Japanese Cheese Cake</h3>
+        </a>
+        <a class="dish" href="https://izakaya.com.bd/products/fried-nori-beef-tacos">
+           <div class="dish-img wide"><img src="images/products/fried-nori-beef-tacos.jpg" alt="Fried Nori Beef Tacos"></div>
+          <h3>Fried Nori Beef Tacos</h3>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ RESERVE ============ -->
+    <section class="reserve" id="reserve">
+      <div class="wrap reserve-grid">
+        <figure class="reserve-img">
+           <img src="images/brand/reserve-flatlay.jpg" alt="Overhead view of sushi, sashimi and side dishes on a pink table"
+            loading="lazy">
+        </figure>
+
+        <form class="reserve-form" id="reserveForm" novalidate>
+          <h2>Reserve a table</h2>
+          <p class="reserve-lead">Tell us when and where. We will confirm by phone.</p>
+
+          <div class="field-row">
+            <label class="field"><span>Full name</span><input type="text" name="name" id="rName" autocomplete="name"
+                required></label>
+            <label class="field"><span>Phone number</span><input type="tel" name="phone" id="rPhone" inputmode="numeric"
+                maxlength="11" pattern="01[0-9]{9}" placeholder="01XXXXXXXXX" autocomplete="tel" required></label>
+          </div>
+          <div class="field-row">
+            <label class="field"><span>Email address</span><input type="email" name="email" id="rEmail"
+                autocomplete="email" required></label>
+            <label class="field"><span>Guests</span>
+              <select name="guests" id="rGuests" required>
+                <option value="" selected disabled>Choose</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option value="11">More than 10</option>
+              </select>
+            </label>
+          </div>
+
+          <fieldset class="chips">
+            <legend>Restaurant</legend>
+            <label><input type="radio" name="location" value="Dhanmondi" required><span>Dhanmondi</span></label>
+            <label><input type="radio" name="location" value="Uttara"><span>Uttara</span></label>
+            <label><input type="radio" name="location" value="Gulshan"><span>Gulshan</span></label>
+          </fieldset>
+
+          <label class="field"><span>Date</span><input type="date" name="date" id="rDate" required></label>
+
+          <fieldset class="chips slots" id="slots">
+            <legend>Time</legend>
+            <label><input type="radio" name="time" value="12:00 PM - 1:00 PM"><span>12:00 PM</span></label>
+            <label><input type="radio" name="time" value="1:00 PM - 2:00 PM"><span>1:00 PM</span></label>
+            <label><input type="radio" name="time" value="2:00 PM - 3:00 PM"><span>2:00 PM</span></label>
+            <label><input type="radio" name="time" value="5:00 PM - 6:00 PM"><span>5:00 PM</span></label>
+            <label><input type="radio" name="time" value="6:00 PM - 7:00 PM" checked><span>6:00 PM</span></label>
+            <label><input type="radio" name="time" value="7:00 PM - 8:00 PM"><span>7:00 PM</span></label>
+            <label><input type="radio" name="time" value="8:00 PM - 9:00 PM"><span>8:00 PM</span></label>
+            <label><input type="radio" name="time" value="9:00 PM - 10:00 PM"><span>9:00 PM</span></label>
+          </fieldset>
+
+          <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+          <button class="btn btn-cta" type="submit" id="reserveBtn">Request this table</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ FIND US ============ -->
+    <section class="find" id="find">
+      <div class="wrap find-grid">
+        <div class="find-text">
+          <h2>Find us</h2>
+          <p class="hours">Every day, 12pm to 10pm</p>
+
+          <div class="outlet">
+            <h3>Dhanmondi</h3>
+            <p>Green Rawshanara Tower, Level 9<br>755 Satmasjid Road, Dhanmondi, Dhaka</p>
+            <a href="tel:+8801841297359">+8801841-297359</a>
+          </div>
+          <div class="outlet">
+            <h3>Uttara</h3>
+            <p>House 26, Rabindra Sarani<br>Sector 7, Uttara, Dhaka</p>
+            <a href="tel:+8801810102520">+8801810-102520</a>
+          </div>
+          <div class="outlet">
+            <h3>Gulshan</h3>
+            <p>Level 5, Meher Nibas, House 12/B<br>Road 55, Gulshan 2, Dhaka</p>
+            <a href="tel:+8801810102523">+8801810-102523</a>
+          </div>
+        </div>
+        <div class="map">
+          <iframe title="Izakaya Dhanmondi on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7303.814769840049!2d90.36542797293455!3d23.750681858558963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf1bbb2e61b5%3A0x77ebc5865b4d7310!2sIzakaya!5e0!3m2!1sen!2sbd!4v1591037884762!5m2!1sen!2sbd"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot">
+      <img src="images/brand/logo-white.png" alt="Izakaya" width="600" height="127">
+      <p>© Izakaya <span id="year"></span></p>
+      <div class="social">
+        <a href="https://www.facebook.com/izakayabd" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.instagram.com/izakayabd/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
