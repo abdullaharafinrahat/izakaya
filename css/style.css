@@ -576,17 +576,107 @@ section {
   font-size: 1.12rem
 }
 
-.story-img {
-  aspect-ratio: 4/5;
-  overflow: hidden;
-  border-radius: 999px 999px 0 0;
-  background: var(--tile)
+/* A shared, bottom-pivoted fan, like three cards held in one hand.
+   The frame reserves room for the rotated corners at every screen size. */
+.food-fan {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  min-width: 0;
+  aspect-ratio: 1.12;
+  margin-inline: auto;
+  isolation: isolate
 }
 
-.story-img img {
+.food-card {
+  --angle: 0deg;
+  --shift: 0%;
+  --lift: 0%;
+  position: absolute;
+  top: 10%;
+  left: 24%;
+  width: 52%;
+  height: 76%;
+  display: flex;
+  flex-direction: column;
+  padding: 7px;
+  border: 1px solid rgba(91, 15, 39, .12);
+  border-radius: 12px;
+  background: var(--paper);
+  color: var(--wine);
+  text-decoration: none;
+  box-shadow: 0 12px 24px rgba(58, 8, 22, .16), 0 2px 5px rgba(58, 8, 22, .08);
+  transform-origin: 50% 100%;
+  transform: translate(var(--shift), var(--lift)) rotate(var(--angle));
+  transition: transform .35s cubic-bezier(.2, .7, .3, 1), box-shadow .35s ease
+}
+
+.food-card:nth-child(1) {
+  --angle: -19deg;
+  --shift: -25%;
+  z-index: 1
+}
+
+.food-card:nth-child(2) {
+  --angle: -3deg;
+  --lift: -6%;
+  z-index: 2
+}
+
+.food-card:nth-child(3) {
+  --angle: 19deg;
+  --shift: 25%;
+  z-index: 3
+}
+
+.food-card-photo {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 7px;
+  display: grid;
+  place-items: center
+}
+
+.food-card-photo--blush { background: #F1DEDC }
+.food-card-photo--sand { background: #F0E8D8 }
+.food-card-photo--sage { background: #E3E8D9 }
+
+.food-card-photo img {
   width: 100%;
   height: 100%;
-  object-fit: cover
+  object-fit: cover;
+  mix-blend-mode: multiply
+}
+
+.food-card-name {
+  display: block;
+  flex: none;
+  padding: 12px 2px 7px;
+  font-family: var(--display);
+  font-size: clamp(.65rem, 1.05vw, .9rem);
+  font-weight: 600;
+  line-height: 1.3;
+  text-align: center
+}
+
+.food-fan--reserve .food-card {
+  box-shadow: 0 18px 35px rgba(20, 0, 8, .32), 0 2px 6px rgba(20, 0, 8, .15)
+}
+
+.food-card:focus-visible {
+  --lift: -13%;
+  z-index: 4;
+  outline: 3px solid var(--wasabi);
+  outline-offset: 5px
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .food-card:hover {
+    --lift: -13%;
+    z-index: 4;
+    box-shadow: 0 22px 38px rgba(58, 8, 22, .24)
+  }
 }
 
 .ways {
@@ -1073,18 +1163,6 @@ section {
   align-items: center
 }
 
-.reserve-img {
-  aspect-ratio: 4/5;
-  overflow: hidden;
-  border-radius: 999px 999px 0 0
-}
-
-.reserve-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover
-}
-
 .reserve-form h2 {
   color: var(--white);
   font-size: clamp(2.1rem, 4.2vw, 3.6rem);
@@ -1320,10 +1398,13 @@ section {
     grid-template-columns: 1fr
   }
 
-  .story-img,
-  .reserve-img {
-    max-width: 420px;
-    aspect-ratio: 1/1
+  .food-fan {
+    width: 84%;
+    max-width: 440px
+  }
+
+  .food-card-name {
+    font-size: clamp(.65rem, 2.5vw, .9rem)
   }
 
   .slip {
